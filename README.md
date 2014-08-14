@@ -16,4 +16,6 @@ Simple MVT bucketing code
       ["1" :orange-button] ;; User's existing bucket
       0.2) ;; User's seed (should be randomly distributed between users)
 
-Users eligible for bucketing will be assigned either the control bucket or one of the active buckets according to the weighting values in the config for the last episode. Users are eligible for rebucketing iff they have no bucket, or the bucket they have been assigned to isn't part of an unreleased episode. 
+Users eligible for bucketing will be assigned either the control bucket or one of the active buckets according to the weighting values in the config for the last episode. Users are eligible for rebucketing iff they have no bucket, or the bucket they have been assigned to isn't part of an unreleased episode.
+
+The control parameter is considered to be a percentage. The weightings on the active variants are considered to be relative weightings. 
