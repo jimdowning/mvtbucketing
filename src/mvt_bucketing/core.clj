@@ -77,7 +77,7 @@
   (> control-percent (disperse user-seed 100)))
 
 (defn- accumulate
-  "Takes a seq of keyword int tuples and returns the same list with ints accumulated"
+  "Takes a seq of [keyword int] tuples and returns the same list with ints accumulated"
   [variants]
   (reductions (fn [[_ s] [variant a]]
                   [variant (+ s a)])

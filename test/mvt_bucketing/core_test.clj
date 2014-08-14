@@ -8,7 +8,8 @@
             [mvt-bucketing.core :as bucket]))
 
 (def example-config
-  [{:episode "1" :control 30 :active {:blue-button 40
+  [{:episode "0" :control 50 :active {:blue-button 100} :release true}
+   {:episode "1" :control 30 :active {:blue-button 40
                                       :red-button 25
                                       :orange-button 35}}
    {:episode "2" :control 20 :active {:blue-button 50

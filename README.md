@@ -6,13 +6,13 @@ Simple MVT bucketing code
 ## Usage
 
     (mvt-bucketing/assign-bucket
-      [ {:episode "1" :release true :control 0.5 
-         :active {:blue-button 1.0}}
-        {:episode "2" :control 0.3 :active {:blue-button 0.4
-                                           :red-button 0.25
-                                           :orange-button 0.35}}
-        {:episode "3" :control 0.2 :active {:blue-button 0.5
-                                           :red-button 0.5}}] ;; The test config
+      [ {:episode "1" :release true :control 50
+         :active {:blue-button 50}}
+        {:episode "2" :control 30 :active {:blue-button 40
+                                           :red-button 25
+                                           :orange-button 35}}
+        {:episode "3" :control 20 :active {:blue-button 50
+                                           :red-button 50}}] ;; The test config
       ["1" :orange-button] ;; User's existing bucket
       0.2) ;; User's seed (should be randomly distributed between users)
 
